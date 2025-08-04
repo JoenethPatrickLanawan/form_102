@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Form 102</title>
+  
+</head>
+
+<body>
+  <h1>Send an anonymous message!</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="username" placeholder="Either Real or Online username"><br>
+    <label for="address">Address:</label>
+    <input type="text" id="address" placeholder="Set approximate country"><br>
+    <label for="message">Message:</label>
+    <textarea type="text" id="message" value="Type message..."
+    rows="5" cols="50"></textarea><br>
+    <label for="sender">Send to:</label>
+    <select id="select">
+      <option>Asia</option>
+      <option>Europe</option>
+      <option>Africa</option>
+      <option>North America</option>
+      <option>South America</option>
+    </select><br>
+    <label for="number">Number:</label>
+    <input type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+    autocomplete="on"><br>
+    <label for="delivery">Delivery Type:</label>
+    <select>
+      <option>10 samples</option>
+      <option>100 samples</option>
+      <option>1000 samples</option>
+    </select><br>
+    <input type="extra" value="Read your message carefully" disabled><br>
+    <button id="sendBtn">SEND NOW!</button>
+  </form>
+</body>
+</html>
